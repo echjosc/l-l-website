@@ -1,0 +1,95 @@
+/* 
+SO what ive found for the header of itsFairy, theres 3 media queries.
+1) Mobile
+The image and the divide of left and right no longer keep 50% width. instead
+it changes to like 75% to 25%. Image is smaller width. */
+
+/* 2) Tablet/Small Laptop 
+Image stays 50-50 until it hits next break point 
+with height 100% and width auto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+.content{
+    display: flex;
+}
+  #headerImg{
+    height: 100%;
+    width: auto;
+
+  }
+  #Logo {
+    width: 200px;
+    height: auto;
+   
+}
+  .left-1 {
+    width: 800px;
+    height: 400px;
+    padding: 0px;
+    overflow: hidden;
+
+  }
+  .right-1 {
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    overflow: hidden;    
+  }
+  .left-2 {
+    width: 50%;
+    height: 200px;
+    padding: 0px;
+    overflow: hidden;
+
+  }
+  .right-2 {
+    width: 50%;
+    height: 200px;
+    padding: 0px;
+    overflow: hidden;    
+  }
+  .debug{
+    border: 1px solid red; /* For debugging */
+  }
+
+
+
+  #headerSection{
+    width: 270px;
+      height: 230px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 85px;
+
+
+  }
+
+  .title{
+    white-space:nowrap;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+
+  }
+
+  .body{
+    white-space: nowrap;
+
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 20px;
+
+  }
+
+
+
+/* 3) Desktop Large
+height 100% and width auto */
+
+
+
+
+
