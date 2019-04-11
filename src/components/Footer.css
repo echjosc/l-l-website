@@ -1,0 +1,9 @@
+.footer-background{
+    background-color: dimgrey;
+}
+
+
+.debug {
+    border: 1px solid red;
+    /* For debugging */
+}
