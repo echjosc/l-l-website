@@ -1,0 +1,644 @@
+/* 
+SO what ive found for the header of itsFairy, theres 3 media queries.
+1) Mobile
+The image and the divide of left and right no longer keep 50% width. instead
+it changes to like 75% to 25%. Image is smaller width. */
+
+/* 2) Tablet/Small Laptop 
+Image stays 50-50 until it hits next break point 
+with height 100% and width auto */
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+@media(min-width: 0px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    .bg-wg {
+        background-image: url(../../assets/bg-wg.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bg-gw {
+        background-image: url(../../assets/bg-gw.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element2 {
+        padding: 100px 0 100px 0;
+    }
+
+    .element1 {
+        padding: 100px 0 0 0;
+    }
+
+    .icon1 {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .icon2 {
+        width: 120px;
+        height: 120px;
+        padding: 5px 5px
+
+    }
+
+
+    .content {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .middie {
+        padding: 62px 0;
+        border: 3px solid green;
+    }
+
+    .headerImg {
+        height: 100%;
+        width: auto; 
+    }
+
+    #Logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .left-1 {
+        width: 800px;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-1 {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+        display: none;
+    }
+
+
+    .debug {
+        border: 1px solid red;
+        /* For debugging */
+    }
+
+    #headerSection {
+        width: 270px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+    }
+
+    .title {
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .body {
+        white-space: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bg-wg {
+        background-image: url(../../assets/bg-wg.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bg-gw {
+        background-image: url(../../assets/bg-gw.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element2 {
+        padding: 100px 0 100px 0;
+    }
+
+    .element1 {
+        padding: 100px 0 0 0;
+    }
+
+    .icon1 {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+    .icon2 {
+        width: 150px;
+        height: 150px;
+        padding: 5px 5px
+
+    }
+
+
+    .content {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .middie {
+        padding: 62px 0;
+        border: 3px solid green;
+    }
+
+    .headerImg {
+        height: 100%;
+        width: auto;
+    
+    }
+
+    #Logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .left-1 {
+        width: 800px;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-1 {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+        display: inline;
+    }
+
+    .left-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .debug {
+        border: 1px solid red;
+        /* For debugging */
+    }
+
+    #headerSection {
+        width: 270px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+    }
+
+    .title {
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .body {
+        white-space: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bg-wg {
+        background-image: url(../../assets/bg-wg.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bg-gw {
+        background-image: url(../../assets/bg-gw.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element2 {
+        padding: 100px 0 100px 0;
+    }
+
+    .element1 {
+        padding: 100px 0 0 0;
+    }
+
+    .icon1 {
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+    .icon2 {
+        width: 200px;
+        height: 200px;
+        padding: 5px 5px
+
+    }
+
+
+    .content {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .middie {
+        padding: 62px 0;
+        border: 3px solid green;
+    }
+
+    .headerImg {
+        height: 100%;
+        width: auto;
+    }
+
+    #Logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .left-1 {
+        width: 800px;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-1 {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .left-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .debug {
+        border: 1px solid red;
+        /* For debugging */
+    }
+
+    #headerSection {
+        width: 270px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+    }
+
+    .title {
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .body {
+        white-space: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bg-wg {
+        background-image: url(../../assets/bg-wg.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bg-gw {
+        background-image: url(../../assets/bg-gw.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element2 {
+        padding: 100px 0 100px 0;
+    }
+
+    .element1 {
+        padding: 100px 0 0 0;
+    }
+
+    .icon1 {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .icon2 {
+        width: 210px;
+        height: 210px;
+        margin: 25px 25px 0 25px
+
+    }
+
+
+    .content {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .middie {
+        padding: 62px 0;
+        border: 3px solid green;
+    }
+
+    .headerImg {
+        height: auto;
+        width: 100%;
+    }
+
+    #Logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .left-1 {
+        width: 650px;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-1 {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .left-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .debug {
+        border: 1px solid red;
+        /* For debugging */
+    }
+
+    #headerSection {
+        width: 270px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+    }
+
+    .title {
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .body {
+        white-space: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .bg-wg {
+        background-image: url(../../assets/bg-wg.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .bg-gw {
+        background-image: url(../../assets/bg-gw.gif);
+        background-size: cover;
+        /* <------ */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .element2 {
+        padding: 100px 0 100px 0;
+    }
+
+    .element1 {
+        padding: 100px 0 0 0;
+    }
+
+    .icon1 {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+    .icon2 {
+        width: 220px;
+        height: 220px;
+        margin: 25px 25px 0 25px
+
+    }
+
+
+    .content {
+        display: flex;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .middie {
+        padding: 62px 0;
+        border: 3px solid green;
+    }
+
+    .headerImg {
+        height: auto;
+        width: 100%;
+    }
+
+    #Logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .left-1 {
+        width: 800px;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-1 {
+        width: 100%;
+        height: 400px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .left-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .right-2 {
+        width: 50%;
+        height: 200px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .debug {
+        border: 1px solid red;
+        /* For debugging */
+    }
+
+    #headerSection {
+        width: 270px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 85px;
+    }
+
+    .title {
+        white-space: nowrap;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .body {
+        white-space: nowrap;
+        justify-content: flex-start;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+
+}

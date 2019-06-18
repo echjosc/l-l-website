@@ -1,0 +1,129 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+//debugging
+.debug {
+    border-color: red;
+}
+
+//vars
+$mainNewsletterBg: url('../../assets/bgNewsletter.png');
+
+//basic and repeatable 
+
+
+//thematics + constants
+h3,
+p {
+    text-align: center;
+}
+
+
+
+@include media-breakpoint-up(xs) {
+
+    //Header
+    .mainHeaderContainer {
+
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .mainHeaderButton{
+        background: #7043b3;
+        border: #7043b3;
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:active:focus {
+            background: #553388 !important;
+            border: #553388;
+        }
+
+    }
+
+    .mainHeaderImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainHeaderContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    //Body
+    #whatWeDo {
+        background: lightgrey;
+    }
+
+    .mainBodyIcons {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    //Newsletter
+    .mainSubscribeButton {
+        margin-top: 35px;
+        background: #7043b3;
+        border: #7043b3;
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus,
+        &:active:focus {
+            background: #553388 !important;
+            border: #553388;
+        }
+    }
+
+    .mainNewsInput {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 0;
+        color: white;        
+
+        &:focus {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: transparent;
+            color: white;
+        }
+
+    }
+
+    .mainNewsletter {
+        background: $mainNewsletterBg no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .mainNewsContainer {
+        background: #957ac2;
+        color: white;
+        padding: 20px; 
+    }
+
+
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}

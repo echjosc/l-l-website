@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import "./Footer.css"
+import "./css/Footer.css"
 
 
 export default class Footer extends Component {
@@ -18,18 +18,18 @@ export default class Footer extends Component {
 
 
                     <Row className="justify-content-center">
-                        <Col className="debug" xs={4} sm={4} md={4} lg={4} xl={4} >
-                            <h5 align="left">ABOUT</h5>
-                            <Nav.Link align="left" href="About">Test</Nav.Link>
-                            <Nav.Link align="left" href="About">Test</Nav.Link> <br />
-                            <h5 align="left">SERVICES</h5>
-                            <Nav.Link align="left" href="About">Test</Nav.Link>
-                            <Nav.Link align="left" href="About">Test</Nav.Link>
+                        <Col className="debug" xs={6} sm={4} md={4} lg={4} xl={4} >
+                            <h5>ABOUT</h5>
+                            <Nav.Link  href="About">Test</Nav.Link>
+                            <Nav.Link href="About">Test</Nav.Link> <br />
+                            <h5 >SERVICES</h5>
+                            <Nav.Link  href="About">Test</Nav.Link>
+                            <Nav.Link  href="About">Test</Nav.Link>
 
 
 
                         </Col>
-                        <Col className="debug" xs={4} sm={4} md={4} lg={4} xl={4}>
+                        <Col className="debug" xs={6} sm={4} md={4} lg={4} xl={4}>
                             <h5>LOCATION</h5>
                             <Nav.Link href="About">Test</Nav.Link>
                             <Nav.Link href="About">Test</Nav.Link>
@@ -38,7 +38,7 @@ export default class Footer extends Component {
 
 
                         </Col>
-                        <Col className="debug" xs={4} sm={4} md={4} lg={4} xl={4}>
+                        <Col className="debug" xs={12} sm={4} md={4} lg={4} xl={4}>
                             <h5>LOCATION</h5>
                             <Nav.Link href="About">Test</Nav.Link>
                             <Nav.Link href="About">Test</Nav.Link>

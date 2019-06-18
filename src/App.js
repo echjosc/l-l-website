@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import Routes from './Routes';
-import './App.css';
+import './App.scss';
 
 class App extends Component {
 
@@ -25,8 +25,7 @@ class App extends Component {
 
 
     return (
-      <div className="App">
-      
+      <div className="App">      
         <div>
           <Routes childProps={childProps} />
 
