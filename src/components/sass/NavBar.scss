@@ -1,0 +1,111 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+
+
+.toggle,
+.toggle:active,
+.toggle:focus {
+    border: none;
+    outline: 0;
+}
+
+.navButton{
+    background-color: #AD7EB3;
+    border-color: #AD7EB3;
+    color: white;
+    font-weight: bold;
+}
+.navButton:hover{
+    background-color: #A175A6;
+    border-color: #A175A6;
+    color: white;
+}
+.navButton:active{
+    background-color: #A175A6;
+    border-color: #A175A6;
+    color: white;
+}
+
+.mobileNav{
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobileSect{
+    width: 100vw;
+    height: 25vh;
+}
+
+
+
+#NavBar {
+    display: flex;
+    justify-content: flex-start;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    background-color: white;
+}
+
+
+
+#Logo {
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+
+}
+
+@include media-breakpoint-up(xs) {
+    .brand {
+        font-family: 'Petit Formal Script', cursive;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .nav-mobile {
+        display: flex;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+}
+
+@include media-breakpoint-up(sm) {
+    .brand {
+        font-family: 'Petit Formal Script', cursive;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .brand {
+        font-family: 'Petit Formal Script', cursive;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+    }
+}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}

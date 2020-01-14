@@ -1,0 +1,113 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+
+
+
+@include media-breakpoint-up(xs) {
+
+    .aboutButton {
+        color: #AD7EB4;
+        font-weight: bold;
+    }
+    .aboutButton:hover {
+        color: #AD7EB4;
+        font-weight: bold;
+    }
+    .aboutButton:active{
+        color: #AD7EB4;
+        font-weight: bold;
+    }
+    
+
+    .aboutHeader {
+        padding-top: 15px;
+        background-color: #AD7EB4
+    }
+
+    .aboutHeaderContainer {
+        text-align: center;
+        color: white;
+    }
+
+    .aboutHeaderContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .aboutIconContainer {
+        background-color: #DBD3BF;
+    }
+
+    .aboutIcon {
+        width: 200px;
+        height: auto;
+    }
+
+    .aboutAboutUs{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .aboutFromOurFounder{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .founderIcon {
+        width: 170px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
+
+//========================
+
+
+@include media-breakpoint-up(md) {
+    .aboutHeaderContainer {
+        color: white;
+        display: flex;
+        height: auto;
+        align-items: center
+    }
+
+    .aboutHeaderContent {
+        text-align: left
+    }
+
+    .aboutIcon {
+        width: 200px;
+        height: auto;
+    }
+    .founderIcon {
+        width: 180px;
+        height: auto;
+    }
+
+    .aboutAboutUs{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .aboutFromOurFounder{
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+}
+
+//======================
+
+@include media-breakpoint-up(lg) {
+    .aboutIcon {
+        width: 230px;
+        height: auto;
+    }
+
+    .founderIcon {
+        width: 200px;
+        height: auto;
+    }
+}

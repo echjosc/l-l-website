@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+
+@include media-breakpoint-up(xs) {
+    .faqHeader{
+        padding-top: 20px;
+    }
+    .faqIcon{
+        width: 40px;
+        height: auto;
+    }
+    .questionAnswer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .question{
+        padding-bottom: 5px;
+    }
+
+    .answer{
+        padding-top: 5px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .faqIcon{
+        width: 60px;
+        height: auto;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .faqIcon{
+        width: 90px;
+        height: auto;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .faqIcon{
+        width: 100px;
+        height: auto;
+    }
+}

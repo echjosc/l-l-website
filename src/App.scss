@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+@include media-breakpoint-up(xs) {
+    .App{
+        padding-top: 57.8px
+    }
+}
+
+@include media-breakpoint-up(md){
+    .App{
+        padding-top: 0px
+    }
+}

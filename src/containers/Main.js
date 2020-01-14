@@ -4,10 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
-import header from '../assets/mainHeader.jpg';
+import Header from '../assets/mainHeader.png';
 import NavBar from '../components/NavBar'
 import tempIcon from '../assets/onedone.png'
 import topDecoration from '../assets/bgDecoration.png'
+
+import Footer from '../components/Footer'
 
 import './sass/Main.scss';
 
@@ -17,17 +19,17 @@ export default class Main extends Component {
       <div>
         <NavBar />
         <div className='mainHeaderContainer'>
-          <img src={header} className="mainHeaderImg" />
+          <img src={Header} className="mainHeaderImg" />
           <div className='mainHeaderContent'>
-            <h3>Welcome to the new way to clean.</h3>
-            <Button size='lg' className='mainHeaderButton'>GET A QUOTE</Button>
+            <h1>Welcome to the new way to clean.</h1>
+           
           </div>
         </div>
 
         <div id='whatWeDo'>
           <Container>
-            <div className='p-5'>
-              <h3>We love what we do.</h3>
+            <div className='px-3 text-center py-5'>
+              <h4>We love what we do.</h4>
               <p>
                 Ad incididunt exercitation Lorem minim id aliquip occaecat ad ipsum non aliquip laboris.
                 Minim commodo fugiat pariatur magna proident mollit laboris exercitation nisi eiusmod veniam.
@@ -84,32 +86,30 @@ export default class Main extends Component {
 
 
 
-        <div className='mainNewsletter p-5'>
+        <div className='mainNewsletter px-3 py-5'>
           <Container className="mainNewsContainer">
             <div className='pb-2'>
               <h3 className='text-left'>Stay up to date with us. <br /> Subscribe to our Newsletter.</h3>
               <Form className=''>
                 <Form.Row className='p-2'>
-                  <Col>
-                    <Form.Label>First Name</Form.Label>
-                    <Form.Control className='mainNewsInput' />
-                  </Col>
-                  <Col>
-                    <Form.Label>Last Name</Form.Label>
-                    <Form.Control className='mainNewsInput' />
-                  </Col>
-                </Form.Row>
-                <Form.Row className='p-2'>
-                  <Col>
-                    <Form.Label>E-mail Address</Form.Label>
-                    <Form.Control className='mainNewsInput' />
-                  </Col>
-                  <Col>
 
-                    <Button className="w-100 mainSubscribeButton" variant="primary" type="submit">
-                      Subscribe
+                  
+                  <Form.Control placeholder="First Name" className='mainNewsInput' />
+                  {/* <Form.Label className="label">First Name</Form.Label> */}
+
+                  
+                  <Form.Control placeholder="Last Name" className='mainNewsInput' />
+                  {/* <Form.Label className="label">Last Name</Form.Label> */}
+
+                  
+                  <Form.Control placeholder="E-mail Address" className='mainNewsInput' />
+                  {/* <Form.Label className="label">E-mail Address</Form.Label> */}
+
+
+                  <Button className="w-100 mainSubscribeButton" variant="primary" type="submit">
+                    Subscribe
                     </Button>
-                  </Col>
+
                 </Form.Row>
 
               </Form>
@@ -120,7 +120,7 @@ export default class Main extends Component {
 
 
 
-        {/* Footer will be here */}
+        <Footer/>
 
 
 

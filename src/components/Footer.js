@@ -2,49 +2,64 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import "./css/Footer.css"
+
+import IG from '../assets/footer/instagram.svg'
+import FB from '../assets/footer/facebook.svg'
+import "./sass/Footer.scss"
 
 
 export default class Footer extends Component {
     render() {
         return (
-            <div className="footer-background">
+            <div className="footer">
                 <Container>
-                    <Row><Col><br /></Col></Row> 
-                    {/* Eventually, add top paadding yo this row */}
+
 
 
 
                     <Row className="justify-content-center">
-                        <Col className="debug" xs={6} sm={4} md={4} lg={4} xl={4} >
-                            <h5>ABOUT</h5>
-                            <Nav.Link  href="About">Test</Nav.Link>
-                            <Nav.Link href="About">Test</Nav.Link> <br />
-                            <h5 >SERVICES</h5>
-                            <Nav.Link  href="About">Test</Nav.Link>
-                            <Nav.Link  href="About">Test</Nav.Link>
+                        <Col className="" xs={5} sm={6} md={4} lg={4} xl={4} >
+                            <a href="/">Home</a> <br />
+                            <a href="/Services">Services</a> <br />
+                            <a href="/AboutUs">About Us</a> <br />
+                            <a href="/FAQ">FAQ</a> <br />
+                            <a href="/">Request a Quote</a> <br /><br />
+
+                            <div className="d-md-none">
+                                <h6>Follow Us!</h6>
+                                <a href="https:/www.instagram.com/" target="_blank"><img class="footerIcon" src={IG} width="43px" /></a>
+                            <a href="https:/www.facebook.com/" target="_blank"><img class="footerIcon" src={FB} width="35px" /></a>
+                            </div>
+
+
 
 
 
                         </Col>
-                        <Col className="debug" xs={6} sm={4} md={4} lg={4} xl={4}>
-                            <h5>LOCATION</h5>
-                            <Nav.Link href="About">Test</Nav.Link>
-                            <Nav.Link href="About">Test</Nav.Link>
-                            <Nav.Link href="About">Test</Nav.Link>
+                        <Col className="" xs={6} sm={6} md={4} lg={4} xl={4}>
+                            <h6>Contact & Hours</h6>
 
+                            <a href="mailto:info@lemon-lavender.com">info@lemon-lavender.com</a><br />
+                            <a href="tel:(914)574-4478">(914)574-4478</a><br />
+                            <br />
 
-
+                            <p className="text-left">
+                                Mon: 8am - 5pm<br />
+                                Tues: 8am - 5pm<br />
+                                Wed: 8am - 5pm<br />
+                                Thurs: 8am - 5pm<br />
+                                Fri: 8am - 5pm
+                            </p>
                         </Col>
-                        <Col className="debug" xs={12} sm={4} md={4} lg={4} xl={4}>
-                            <h5>LOCATION</h5>
-                            <Nav.Link href="About">Test</Nav.Link>
-                            <Nav.Link href="About">Test</Nav.Link>
-                            <Nav.Link href="About">Test</Nav.Link>
 
+                        <Col className="d-none d-md-block " xs={0} sm={0} md={4} lg={4} xl={4}>
+                            <h6 >Follow Us!</h6>
+
+
+                            <a href="https:/www.instagram.com/" target="_blank"><img class="footerIcon" src={IG} width="43px" /></a>
+                            <a href="https:/www.facebook.com/" target="_blank"><img class="footerIcon" src={FB} width="35px" /></a>
                         </Col>
+
 
                     </Row>
 
