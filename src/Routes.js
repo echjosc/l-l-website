@@ -7,8 +7,8 @@ import NotFound from "./containers/NotFound";
 import Services from './containers/Services'
 import FAQ from './containers/FAQ';
 import AppliedRoute from "./components/AppliedRoute";
-import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
-import AuthenticatedRoute from "./components/AuthenticatedRoute";
+// import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
+// import AuthenticatedRoute from "./components/AuthenticatedRoute";
 
 export default ({ childProps }) =>
     <BrowserRouter>

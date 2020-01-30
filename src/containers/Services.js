@@ -23,7 +23,7 @@ export default class Services extends Component {
                         <Row>
 
                             <Col xs={12} s={12} md={12} lg={12} xl={12}>
-                                <h4 className="text-center">
+                                <h4 className="text-center text-md-left">
                                     Serving Westchester &  Fairfield Counties
                                 </h4>
                                 <p className='text-md-left text-center' >
@@ -38,7 +38,7 @@ export default class Services extends Component {
 
                         <Row>
                             <Col className="text-md-right text-center  " xs={12} s={12} md={4} lg={4} xl={4}>
-                                <img className='servicesIcon' src={Essential} />
+                                <img className='servicesIcon' alt="" src={Essential} />
 
                             </Col>
                             <Col className="text-md-left text-center align-self-center " xs={12} s={12} md={8} lg={8} xl={8}>
@@ -50,20 +50,20 @@ export default class Services extends Component {
                             </Col>
                         </Row>
                         <Row>
+                            <Col className="text-md-right text-center  " xs={{ span: 12, order: 1 }} s={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} lg={4} xl={4}>
+                                <img className='servicesIcon ' alt="" src={Weekly} />
 
-                            <Col className="text-md-right text-center align-self-center  " xs={{ span: 12, order: 2 }} s={{ span: 12, order: 2 }} md={{ span: 8, order: 1 }} lg={8} xl={8}>
+                            </Col>
+                            <Col className="text-md-left text-center align-self-center  " xs={{ span: 12, order: 2 }} s={{ span: 12, order: 2 }} md={{ span: 8, order: 1 }} lg={8} xl={8}>
                                 <h5>Weekly/Bi-Weekly</h5>
                                 After your Initial Deep Clean, you have decided you would like a recurring contract with L&L,
                                 we will give you a personalized quote for cleaning on a regular basis.
                             </Col>
-                            <Col className="text-md-left text-center align-middle  " xs={{ span: 12, order: 1 }} s={{ span: 12, order: 1 }} md={{ span: 4, order: 1 }} lg={4} xl={4}>
-                                <img className='servicesIcon ' src={Weekly} />
-
-                            </Col>
+                            
                         </Row>
                         <Row>
                             <Col className="text-md-right text-center align-middle  " xs={12} s={12} md={4} lg={4} xl={4}>
-                                <img className='servicesIcon ' src={OneDone} />
+                                <img className='servicesIcon ' alt="" src={OneDone} />
 
                             </Col>
                             <Col className="text-md-left text-center align-self-center " xs={12} s={12} md={8} lg={8} xl={8}>

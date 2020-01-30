@@ -27,8 +27,8 @@ export default class Footer extends Component {
 
                             <div className="d-md-none">
                                 <h6>Follow Us!</h6>
-                                <a href="https:/www.instagram.com/" target="_blank"><img class="footerIcon" src={IG} width="43px" /></a>
-                            <a href="https:/www.facebook.com/" target="_blank"><img class="footerIcon" src={FB} width="35px" /></a>
+                                <a href="https:/www.instagram.com/" target="_blank" rel="noopener noreferrer" ><img className="footerIcon" alt="" src={IG} width="43px" /></a>
+                            <a href="https:/www.facebook.com/" target="_blank" rel="noopener noreferrer" ><img className="footerIcon" alt="" src={FB} width="35px" /></a>
                             </div>
 
 
@@ -40,7 +40,7 @@ export default class Footer extends Component {
                             <h6>Contact & Hours</h6>
 
                             <a href="mailto:info@lemon-lavender.com">info@lemon-lavender.com</a><br />
-                            <a href="tel:(914)574-4478">(914)574-4478</a><br />
+                            <a href="tel:(914)574-4478">(914) 574-4478</a><br />
                             <br />
 
                             <p className="text-left">
@@ -56,8 +56,8 @@ export default class Footer extends Component {
                             <h6 >Follow Us!</h6>
 
 
-                            <a href="https:/www.instagram.com/" target="_blank"><img class="footerIcon" src={IG} width="43px" /></a>
-                            <a href="https:/www.facebook.com/" target="_blank"><img class="footerIcon" src={FB} width="35px" /></a>
+                            <a href="https://www.instagram.com/lemon.lavender.clean/" target="_blank" rel="noopener noreferrer" ><img className="footerIcon" src={IG} alt="" width="43px" /></a>
+                            <a href="https://www.facebook.com/lemonandlavenderclean/" target="_blank" rel="noopener noreferrer" ><img className="footerIcon" src={FB} alt="" width="35px" /></a>
                         </Col>
 
 

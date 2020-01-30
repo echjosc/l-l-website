@@ -6,7 +6,14 @@
 @include media-breakpoint-up(xs) {
     .faqHeader{
         padding-top: 20px;
+        padding-bottom: 30px;
     }
+
+    .faqContent{
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
     .faqIcon{
         width: 40px;
         height: auto;
@@ -36,6 +43,11 @@
     .faqIcon{
         width: 90px;
         height: auto;
+    }
+
+    .faqContent{
+        padding-top: 15px;
+        padding-bottom: 50px;
     }
 }
 

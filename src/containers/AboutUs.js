@@ -43,22 +43,24 @@ class AboutUs extends Component {
                                     controls={false}
                                     indicators={false}
                                     pauseOnHover={false}
-                                    interval={4000}
+                                    interval={5000}
                                     slide={false}
                                 >
 
 
-                                    <Carousel.Item>
+                                    {/* <Carousel.Item>
                                         <img
                                             className="d-block w-100"
                                             src={Team1}
+                                            alt=""
                                         />
 
-                                    </Carousel.Item>
+                                    </Carousel.Item> */}
                                     <Carousel.Item>
                                         <img
                                             className="d-block w-100"
                                             src={Team2}
+                                            alt=""
                                         />
 
                                     </Carousel.Item>
@@ -66,6 +68,7 @@ class AboutUs extends Component {
                                         <img
                                             className="d-block w-100"
                                             src={Team3}
+                                            alt=""
                                         />
 
 
@@ -74,6 +77,7 @@ class AboutUs extends Component {
                                         <img
                                             className="d-block w-100"
                                             src={Team4}
+                                            alt=""
                                         />
 
                                     </Carousel.Item>
@@ -87,13 +91,13 @@ class AboutUs extends Component {
                     <Container>
                         <Row>
                             <Col xs={12} sm={4} className="text-center">
-                                <img src={Organic} className="aboutIcon " />
+                                <img src={Organic} className="aboutIcon " alt="" />
                             </Col>
                             <Col xs={12} sm={4} className="text-center">
-                                <img src={Nontoxic} className="aboutIcon " />
+                                <img src={Nontoxic} className="aboutIcon " alt="" />
                             </Col>
                             <Col xs={12} sm={4} className="text-center">
-                                <img src={Ecofriendly} className="aboutIcon " />
+                                <img src={Ecofriendly} className="aboutIcon " alt="" />
                             </Col>
                         </Row>
                     </Container>
@@ -103,7 +107,7 @@ class AboutUs extends Component {
                     <Container>
                         <h3>About Us</h3>
                         <Row>
-                            <Col >
+                            <Col className="text-left" >
 
                                 Lemon & Lavender provides the professionalism of a large company with the personal, clean touch of a small business. We use all natural, non-toxic household cleaning products. Brianna, our Founder, mixes many of our solutions at home using a variety of simple ingredients, including essential oils.
                                 We offer a multitude of services that are convenient for you and your family. In addition to housecleaning, we provide pre/post construction cleans and move-in/out cleans.
@@ -116,13 +120,13 @@ class AboutUs extends Component {
 
                 <div className="aboutFromOurFounder">
                     <Container>
-                        <h3>From Our Founder</h3>
+                        <h3> From Our Founder</h3>
                         <Row>
                             <Col xs={12} s={12} md={4} lg={4} xl={4} className="text-center">
-                                <img src={Founder} className="founderIcon" />
+                                <img src={Founder} className="founderIcon" alt="" />
                                 <h4>Brianna Espinoza</h4>
                             </Col>
-                            <Col xs={12} s={12} md={8} lg={8} xl={8}>
+                            <Col xs={12} s={12} md={8} lg={8} xl={8} className="text-left">
                                 In 2015, I became a first time mother. During my journey through motherhood, health and wellness became a major interest. From her son’s, Luca, natural diapers to his organic shampoo, to the food she was preparing on their kitchen table, she made a consistent effort to keep everything as safe as possible for her little one.
 
                                 As I continued down this road of health, the cleaning products I used in my home also became a concern. As a creative person, I started making my own household cleaning liquids with ingredients I knew. The products I created not only smelled great but also got the job done!
