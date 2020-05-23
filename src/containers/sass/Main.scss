@@ -64,9 +64,10 @@ p {
         background: lightgrey;
     }
 
-    .mainBodyIcons {
-        width: 200px;
-        height: 200px;
+    .mainBodyIcons {        
+        max-height: 220px;
+        padding: 20px;
+    
 
     }
 

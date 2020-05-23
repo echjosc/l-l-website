@@ -23,7 +23,7 @@ export default class Footer extends Component {
                             <a href="/Services">Services</a> <br />
                             <a href="/AboutUs">About Us</a> <br />
                             <a href="/FAQ">FAQ</a> <br />
-                            <a href="/">Request a Quote</a> <br /><br />
+                            <a href="https://clienthub.getjobber.com/client_hubs/1b9e11c8-454b-4e4d-9eb9-268c0803eaa6/public/work_request/new" target="_blank">Request a Quote</a> <br /><br />
 
                             <div className="d-md-none">
                                 <h6>Follow Us!</h6>
