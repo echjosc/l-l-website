@@ -4,6 +4,14 @@
 
 
 @include media-breakpoint-up(xs) {
+    h6{
+        a{
+            color: #4a2179;
+        }
+        a:hover{
+            color: #662ca8;
+        }
+    }
     .faqHeader{
         padding-top: 20px;
         padding-bottom: 30px;

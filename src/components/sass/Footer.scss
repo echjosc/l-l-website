@@ -1,15 +1,32 @@
 @import "~bootstrap/scss/_functions.scss";
 @import "~bootstrap/scss/_variables.scss";
 @import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../theme.scss";
 
-a, a:active, a:focus, a:visited, a:hover{
-    color: rgb(27, 27, 27);
-}
 
 .footer{
     padding-top: 50px;
     padding-bottom: 30px;
     background-color: rgb(224, 224, 224);
+    a, a:active, a:focus, a:visited, a:hover{
+        color: rgb(27, 27, 27);
+        font-family: $custom-text;
+
+    }
+    p{
+        font-size: 1.1em;
+    }
+    a{
+        font-size: 1.2em;
+    }
+    a:hover{
+        color: rgba(121, 86, 165, 1);
+
+    }
+    h6{
+        font-family: $custom-header;
+        font-size: 1.6em;
+    }
 }
 
 @include media-breakpoint-up(xs) {
@@ -20,6 +37,11 @@ a, a:active, a:focus, a:visited, a:hover{
 
 
 @include media-breakpoint-up(sm) {
+    .footer{
+        p{
+            font-size: 1.2em;
+        }
+    }
 }
 
 

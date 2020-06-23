@@ -9,7 +9,9 @@
 //     box-sizing: border-box;
 // }
 
-
+.bg-light{
+    background-color: #ffffff !important;
+}
 
 .toggle,
 .toggle:active,
@@ -35,6 +37,11 @@
     color: white;
 }
 
+.logo{
+    max-width: 220px;
+}
+
+
 .mobileNav{
     width: 100vw;
     height: 100vh;
@@ -43,6 +50,10 @@
 .mobileSect{
     width: 100vw;
     height: 25vh;
+}
+
+.navbar-nav{
+    align-items: center;
 }
 
 
@@ -103,6 +114,10 @@
 
     .nav-desktop {
         display: flex;
+    }
+
+    .logo{
+        max-width: 220px;
     }
 }
 

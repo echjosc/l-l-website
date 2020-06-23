@@ -4,17 +4,25 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Header from "../assets/main/kitchen.png";
-import NavBar from "../components/NavBar";
-import topDecoration from "../assets/bgDecoration.png";
+import Header from "../assets/banner-1.jpg";
+import Navbar2 from "../components/Navbar2";
+import ATTN from "../components/Announcement";
 import axios from "axios";
 import spray from "../assets/spray.png";
 import gloves from "../assets/gloves.png";
 import checklist from "../assets/checklist.png";
+import logo from "../assets/logo.png";
 
 import Footer from "../components/Footer";
 
 import "./sass/Main.scss";
+
+const divStyle={
+  maxWidth: '650px',
+  position: 'relative',
+  bottom: '0px',
+  filter: 'drop-shadow(0px -40px 40px white)'
+}
 
 export default class Main extends Component {
   constructor(props) {
@@ -28,6 +36,8 @@ export default class Main extends Component {
     this.handleForm = this.handleForm.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+ 
 
   handleForm = (e) => {
     this.setState({
@@ -60,12 +70,14 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div>
-        <NavBar />
+      <div page="home">
+        <Navbar2 />
         <div className="mainHeaderContainer">
           <img src={Header} className="mainHeaderImg" alt="" />
           <div className="mainHeaderContent">
-            <h1>Luxury Eco Friendly Housekeeping</h1>
+            {/* <h1>Luxury Eco Friendly Housekeeping</h1> */}
+            {/* <img src="/static/media/logo.41851232.png" style={divStyle}/> */}
+
           </div>
         </div>
 
@@ -90,9 +102,9 @@ export default class Main extends Component {
 
         <div id="howItWorks">
           <Container>
-            <img className="w-100" src={topDecoration} alt="" />
-            <div className="mb-5 mt-3">
-              <h3>How it works.</h3>
+            {/* <img className="w-100" src={topDecoration} alt="" /> */}
+            <div className="mb-5 mt-5">
+              <h3 style={{textAlign: "center"}}>How it works.</h3>
               <Row className="debug">
                 <Col
                   className="text-center debug"

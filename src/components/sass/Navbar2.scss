@@ -1,0 +1,158 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../theme.scss";
+
+#navbar2{
+    #navbar2-mobile{
+        position: relative;
+        z-index: 500;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        #mobile-container{
+            background-color: white;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            .logo-container{
+                padding-top: 10px;
+                img{
+                    width: auto;
+                    max-height: 150px;
+                    padding: 10px;
+                }
+            }
+            .icon{
+                display: flex;
+                position: absolute;
+                // background-color: white;
+                justify-content: flex-end;
+                width: 100%;
+                top: 101px;
+                i{
+                    padding: 15px;
+                    font-size: 1.7em;
+                }
+            }
+            .nav-items{
+                position: fixed;
+                width: 100%;
+                z-index: -100;
+                ul{
+                    transition: all .4s ease-in;
+                    background-color: white;
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    padding-top: 100px;
+                    
+                    list-style: none;
+                    
+                    li{
+                        color: #333;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+
+    #navbar2-container{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // position: fixed;
+        z-index: 500;
+        background-color: #ffffff;
+        
+        .logo-container{
+            padding-top: 10px;
+            img{
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+        .nav-items{
+            ul{
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                font-family: $custom-header;
+                margin: 7px 0 0 0;
+                padding: 0;
+                
+                a, a:active, a:focus, a:visited, a:hover{
+    
+                    color: #555555;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+    
+                li{
+    
+                    padding: 0 15px 8px 15px;
+                    border-bottom: 3px solid rgba(255, 255, 255, 0);
+                    text-transform: uppercase;
+                    transition: all 200ms ease-in;
+                    font-size: 1.1em;
+                    &:hover{
+                        border-bottom: 3px solid #8b7e9a;
+                        
+                    }
+                   
+                }
+            }        
+        }
+    }
+}
+
+@include media-breakpoint-up(xs) {
+}
+
+
+@include media-breakpoint-up(sm) {
+}
+
+
+@include media-breakpoint-up(md) {
+    #navbar2{
+        #navbar2-mobile{
+            display: none;
+        }
+        #navbar2-container{
+            display: flex;
+        }
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    #navbar2{
+        #navbar2-container{
+            .nav-items{
+                ul{
+                    li{
+                        padding: 0 25px 8px 25px;
+                        font-size: 1.2em;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+}

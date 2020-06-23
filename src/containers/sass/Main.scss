@@ -8,27 +8,29 @@
 }
 
 //vars
-$mainNewsletterBg: url('../../assets/bgNewsletter.png');
+$mainHeaderBg: linear-gradient(rgba(156, 97, 97, 0),rgba(0,0,0,0)), url('../../assets/banner-1.jpg');
+$mainNewsletterBg: linear-gradient(rgba(156, 97, 97, 0),rgba(0,0,0,0)), url('../../assets/main/kitchen.png');
 
 //basic and repeatable 
 
 
 //thematics + constants
-h3,
-p {
-    text-align: center;
-}
+
+
 
 
 
 @include media-breakpoint-up(xs) {
-
-    //Header
     .mainHeaderContainer {
+        
         position: relative;
         text-align: center;
         color: white;
+       
+
     }
+
+    //Header
 
     .mainHeaderButton {
         background: #7043b3;
@@ -48,6 +50,7 @@ p {
     .mainHeaderImg {
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     .mainHeaderContent {
@@ -74,29 +77,29 @@ p {
     //Newsletter
     .mainSubscribeButton {
         margin-top: 35px;
-        background: #7043b3;
-        border: #7043b3;
+        background: #8b7e9a;
+        border: #8b7e9a;
 
         &:hover,
         &:active,
         &:visited,
         &:focus,
         &:active:focus {
-            background: #553388 !important;
-            border: #553388;
+            background: #58486d !important;
+            border: #58486d;
         }
     }
 
     .mainNewsInput {
         background: transparent;
         border: none;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid #333;
         margin: 15px 0px;
         padding: 0px;
         -webkit-box-shadow: none;
         box-shadow: none;
         border-radius: 0;
-        color: white;
+        color: #333;
 
 
 
@@ -104,13 +107,13 @@ p {
             -webkit-box-shadow: none;
             box-shadow: none;
             background: transparent;
-            color: white;
+            color: #333;
         }
 
         &:-webkit-autofill,
         &:-webkit-autofill:hover,
         &:-webkit-autofill:focus {
-            -webkit-text-fill-color: white;
+            -webkit-text-fill-color: #333;
             -webkit-box-shadow: none;
             box-shadow: none;
             transition: background-color 5000s ease-in-out 0s;
@@ -121,17 +124,23 @@ p {
     }
 
     .mainNewsletter {
-        background: $mainNewsletterBg no-repeat center center;
+        background: $mainNewsletterBg;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        background-position: center;
+        // height: 500px;
+        
+        background-attachment: fixed;
     }
 
     .mainNewsContainer {
-        background: #957ac2;
-        color: white;
+        background: rgba(255, 255, 255, 0.8);
+        color: #333333;
         padding: 20px;
+        max-width: 800px;
+        border-radius: 5px;
     }
 
     .label {
@@ -142,7 +151,7 @@ p {
     ::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         font-style: italic;
-        color: white !important;
+        color: #333 !important;
         opacity: 1;
         /* Firefox */
     }
@@ -150,14 +159,14 @@ p {
     :-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         font-style: italic;
-        color: white !important;
+        color: #333 !important;
         opacity: 1;
     }
 
     ::-ms-input-placeholder {
         /* Microsoft Edge */
         font-style: italic;
-        color: white !important;
+        color: #333 !important;
         opacity: 1;
     }
 
@@ -198,29 +207,33 @@ p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        
     }
 }
 
 @include media-breakpoint-up(xl) {
     .mainHeaderImg {
+        width: 100%;
         height: auto;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: translate(0, -10%);
+        
+        
+    }
+    
+    .mainHeaderContent {
+        height: 700px;
         width: 100%;
         position: absolute;
-        top: 0px;
-        left: 0px
-    }
-
-    .mainHeaderContent {
-        width: 75vw;
-        position: absolute;
-        top: 50%;
+        bottom: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .mainHeaderContainer {
-        height: 700px;
+        height: 900px;
         position: relative;
         text-align: center;
         color: white;
@@ -229,3 +242,34 @@ p {
 
     }
 }
+
+// @media (min-width: 2560px){
+//     .mainHeaderImg {
+//         width: 100%;
+//         height: auto;
+//         position: relative;
+//         bottom: 50%;
+//         left: 0px;
+        
+        
+//     }
+    
+//     .mainHeaderContent {
+//         height: 700px;
+//         width: 100%;
+//         position: absolute;
+//         bottom: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+
+//     .mainHeaderContainer {
+//         height: 900px;
+//         position: relative;
+//         text-align: center;
+//         color: white;
+//         overflow-y: hidden;
+
+
+//     }
+// }

@@ -1,15 +1,66 @@
 @import "~bootstrap/scss/_functions.scss";
 @import "~bootstrap/scss/_variables.scss";
 @import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "./theme.scss";
+
+a, a:active, a:focus, a:visited, a:hover{
+    text-decoration: none;
+    // color: #000;
+    font-family: inherit;
+}
+
+ul, p{
+    font-family: $custom-text;
+    font-size: 1.4em;
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $custom-header;
+}
+h1{
+    font-size: 2.6em;
+}
+h2{
+    font-size: 2.4em;
+}
+h3{
+    font-size: 2.2em;
+}
+h4{
+    font-size: 1.85em;
+}
+h5{
+    font-size: 1.75em;
+}
+h6{
+    font-size: 1.65em;
+    font-family: $custom-text;
+}
+
+.App{
+    div[page="home"]{
+        #navbar2{
+            #announcement{
+                .attn{
+                    display: block;
+                }
+            }
+        }
+    }
+        
+}
+
+
 
 @include media-breakpoint-up(xs) {
     .App{
-        padding-top: 57.8px
+        font-size: .85em;
     }
 }
 
 @include media-breakpoint-up(md){
     .App{
-        padding-top: 0px
+        font-size: 1em;
     }
 }

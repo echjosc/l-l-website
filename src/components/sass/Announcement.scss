@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../theme.scss";
+#announcement{
+    .attn{
+        padding: 6px 0;
+        background-color: #8b7e9a;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        font-size: 1em;
+        font-family: $custom-text;
+        display: none;
+    }
+}
+
+@include media-breakpoint-up(xs) {
+}
+
+
+@include media-breakpoint-up(sm) {
+}
+
+
+@include media-breakpoint-up(md) {
+}
+
+
+@include media-breakpoint-up(lg) {
+}
+
+
+@include media-breakpoint-up(xl) {
+}

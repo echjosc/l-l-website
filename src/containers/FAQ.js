@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import NavBar from '../components/NavBar'
+import Navbar2 from "../components/Navbar2";
 import Footer from '../components/Footer'
 import Question from "../assets/faq/question.png"
 import Answer from "../assets/faq/answer.png"
@@ -12,8 +12,8 @@ import './sass/FAQ.scss'
 export default class FAQ extends Component {
     render() {
         return (
-            <div>
-                <NavBar />
+            <div page="faq">
+                <Navbar2 />
                 <Container className="faqContent">
                     <div className="faqHeader text-center text-md-left">
                         <h2 >Frequently Asked Questions</h2>
@@ -28,8 +28,10 @@ export default class FAQ extends Component {
                             <Col xs={2}>
                                 <img src={Question} className="faqIcon " alt="" />
                             </Col>
-                            <Col xs={10} className="">
-                                How much do you charge?
+                            <Col xs={10}>
+                                <p>
+                                    How much do you charge?
+                                </p>
                             </Col>
                         </Row>
 
@@ -38,8 +40,10 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                All cleaning plans start off with an Initial Deep Clean, which is charged on an hourly rate.
-                                        All ongoing cleaning contracts are personalized on a house-by-house basis.
+                                <p>
+                                    All cleaning plans start off with an Initial Deep Clean, which is charged on an hourly rate.
+                                            All ongoing cleaning contracts are personalized on a house-by-house basis.
+                                </p>
                             </Col>
                         </Row>
                     </div>
@@ -53,7 +57,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                How many cleaners will service my home?
+                                <p>
+                                    How many cleaners will service my home?
+                                </p>
                         </Col>
                         </Row>
 
@@ -62,7 +68,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                2-4 trained cleaners will clean your home on any given basis.
+                                <p>
+                                    2-4 trained cleaners will clean your home on any given basis.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -75,7 +83,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Do you charge based on # of cleaners who clean my home?
+                                <p>
+                                    Do you charge based on # of cleaners who clean my home?
+                                </p>
                         </Col>
                         </Row>
 
@@ -84,7 +94,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                No. Prices do not reflect number of cleaners on a given job.
+                                <p>
+                                    No. Prices do not reflect number of cleaners on a given job.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -97,7 +109,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                What are your cleaning products made of?
+                                <p>
+                                    What are your cleaning products made of?
+                                </p>
                         </Col>
                         </Row>
 
@@ -106,7 +120,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Our products are mixes of the following ingredients:
+                                <p>
+                                    Our products are mixes of the following ingredients:
+                                </p>
                             <ul className="ml-4">
                                     <li>
                                         Organic Castille Soap
@@ -139,7 +155,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Can I request the use of chemical cleaners in my home?
+                                <p>
+                                    Can I request the use of chemical cleaners in my home?
+                                </p>
                         </Col>
                         </Row>
 
@@ -148,7 +166,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt=""/>
                             </Col>
                             <Col xs={10}>
-                                Yes. We can accommodate any cleaning regiment you would like.
+                                <p>
+                                    Yes. We can accommodate any cleaning regiment you would like.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -161,7 +181,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Do I need to be home during my scheduled clean?
+                                <p>
+                                    Do I need to be home during my scheduled clean?
+                                </p>
                         </Col>
                         </Row>
 
@@ -170,7 +192,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                No! We encourage all clients to leave a key or garage code so cleaners can enter without any inconvenience.
+                                <p>
+                                    No! We encourage all clients to leave a key or garage code so cleaners can enter without any inconvenience.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -183,7 +207,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                How can I pay for my cleaning service?
+                                <p>
+                                    How can I pay for my cleaning service?
+                                </p>
                         </Col>
                         </Row>
 
@@ -192,7 +218,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                We accept payment via checks, Venmo or Zelle.
+                                <p>
+                                    We accept payment via checks, Venmo or Zelle.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -203,7 +231,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                How can I save money when signing up for a cleaning contract?
+                                <p>
+                                    How can I save money when signing up for a cleaning contract?
+                                </p>
                         </Col>
                         </Row>
 
@@ -212,29 +242,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                If you buy 5 cleanings up front, your 6th cleaning will be 1⁄2 price.
-                        </Col>
-                        </Row>
-                    </div>
-
-                    <hr />
-
-                    <div className="questionAnswer">
-                        <Row className="question">
-                            <Col xs={2}>
-                                <img src={Question} className="faqIcon" alt="" />
-                            </Col>
-                            <Col xs={10}>
-                                Is Lemon & Lavender insured?
-                        </Col>
-                        </Row>
-
-                        <Row className="answer">
-                            <Col xs={2}>
-                                <img src={Answer} className="faqIcon" alt="" />
-                            </Col>
-                            <Col xs={10}>
-                                Yes.
+                                <p>
+                                    If you buy 5 cleanings up front, your 6th cleaning will be 1⁄2 price.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -247,7 +257,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Do I provide cleaning supplies + equipment?
+                                <p>
+                                    Is Lemon & Lavender insured?
+                                </p>
                         </Col>
                         </Row>
 
@@ -256,8 +268,9 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                We do provide all necessary supplies, products and equipment.
-                                    However, if you prefer your own supplies, we will use yours.
+                                <p>
+                                    Yes.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -270,7 +283,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Can I cancel or skip a cleaning appointment?
+                                <p>
+                                    Do I provide cleaning supplies + equipment?
+                                </p>
                         </Col>
                         </Row>
 
@@ -279,7 +294,10 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                If you wish to cancel or reschedule an appointment, please allow 24 business hours' notice to avoid being charged.
+                                <p>
+                                    We do provide all necessary supplies, products and equipment.
+                                        However, if you prefer your own supplies, we will use yours.
+                                </p>
                         </Col>
                         </Row>
                     </div>
@@ -292,7 +310,9 @@ export default class FAQ extends Component {
                                 <img src={Question} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                Do you clean on the holidays?
+                                <p>
+                                    Can I cancel or skip a cleaning appointment?
+                                </p>
                         </Col>
                         </Row>
 
@@ -301,7 +321,35 @@ export default class FAQ extends Component {
                                 <img src={Answer} className="faqIcon" alt="" />
                             </Col>
                             <Col xs={10}>
-                                We clean on all holidays EXCEPT for Thanksgiving Day, Christmas Day + New Years Day.
+                                <p>
+                                    If you wish to cancel or reschedule an appointment, please allow 24 business hours' notice to avoid being charged.
+                                </p>
+                        </Col>
+                        </Row>
+                    </div>
+
+                    <hr />
+
+                    <div className="questionAnswer">
+                        <Row className="question">
+                            <Col xs={2}>
+                                <img src={Question} className="faqIcon" alt="" />
+                            </Col>
+                            <Col xs={10}>
+                                <p>
+                                    Do you clean on the holidays?
+                                </p>
+                        </Col>
+                        </Row>
+
+                        <Row className="answer">
+                            <Col xs={2}>
+                                <img src={Answer} className="faqIcon" alt="" />
+                            </Col>
+                            <Col xs={10}>
+                                <p>
+                                    We clean on all holidays EXCEPT for Thanksgiving Day, Christmas Day + New Years Day.
+                                </p>
                         </Col>
                         </Row>
                     </div>
