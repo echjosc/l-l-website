@@ -5,7 +5,6 @@ import Carousel from 'react-bootstrap/Carousel'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Team1 from "../assets/aboutUs/team1.png"
 import Team2 from "../assets/aboutUs/team2.png"
 import Team3 from "../assets/aboutUs/team3.png"
 import Team4 from "../assets/aboutUs/team4.png"
@@ -47,15 +46,6 @@ class AboutUs extends Component {
                                     slide={false}
                                 >
 
-
-                                    {/* <Carousel.Item>
-                                        <img
-                                            className="d-block w-100"
-                                            src={Team1}
-                                            alt=""
-                                        />
-
-                                    </Carousel.Item> */}
                                     <Carousel.Item>
                                         <img
                                             className="d-block w-100"
