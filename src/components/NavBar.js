@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Logo from "../assets/ll-logo.jpg";
+import Logo from "../assets/logo.png";
 
 import FormatQuoteIcon from "@material-ui/icons/FormatQuote";
 import MenuIcon from "@material-ui/icons/Menu";

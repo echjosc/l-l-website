@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logo from "../assets/ll-logo.jpg"
+import Logo from "../assets/logo.png"
 // import ATTN from "./Announcement"
 
 import "./sass/Navbar2.scss";
